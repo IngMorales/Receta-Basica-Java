@@ -29,7 +29,7 @@ public class Inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        titulo = new javax.swing.JLabel();
         pizza = new javax.swing.JButton();
         tortilla = new javax.swing.JButton();
         pollo = new javax.swing.JButton();
@@ -41,9 +41,9 @@ public class Inicio extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("Exotc350 Bd BT", 1, 14)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Recetas La Magica");
+        titulo.setFont(new java.awt.Font("Exotc350 Bd BT", 1, 14)); // NOI18N
+        titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        titulo.setText("Recetas La Magica");
 
         pizza.setText("Pizza");
         pizza.addActionListener(new java.awt.event.ActionListener() {
@@ -113,14 +113,14 @@ public class Inicio extends javax.swing.JFrame {
                                 .addComponent(tortilla)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(pollo))
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(37, 37, 37))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(pizza)
@@ -143,6 +143,7 @@ public class Inicio extends javax.swing.JFrame {
         this.setVisible(false);
         pizza nuevo = new pizza();
         nuevo.setVisible(true);
+        //System.exit(0);
     }//GEN-LAST:event_pizzaActionPerformed
 
     private void tortillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tortillaActionPerformed
@@ -215,11 +216,11 @@ public class Inicio extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton hamburguesa;
     private javax.swing.JLabel imagen;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton lasaña;
     private javax.swing.JButton pizza;
     private javax.swing.JButton pollo;
     private javax.swing.JButton queso;
+    private javax.swing.JLabel titulo;
     private javax.swing.JButton tortilla;
     // End of variables declaration//GEN-END:variables
 }
